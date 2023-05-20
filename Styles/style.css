@@ -1,0 +1,20 @@
+@import url('https://fonts.cdnfonts.com/css/v-de-vacia');
+
+body{
+    background-image: url();
+    background-size: cover;
+}
+
+h1{
+    color: rgb(4, 17, 133);
+    font-family: 'V de vacía', sans-serif;
+    text-align: center; 
+}
+
+p {
+    text-align: center;
+}
+
+.paragraf{
+    color: aquamarine;
+}

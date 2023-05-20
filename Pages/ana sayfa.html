@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>drike</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        nav {
+            background-color: rgb(131, 127, 127);
+            width: 110%;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+
+        nav img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .menuPage {
+            background-color: black;
+            width: 40%;
+            position: absolute;
+            height: 100%;
+            margin-left: -700px;
+            transition: 0.8s all;
+        }
+
+        .menuPage p {
+            color: white;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        ul {
+            position: absolute;
+            transition: 0.8s all;
+        }
+
+        #GTA6{
+            margin-left: 40px;
+            margin-top: 100px;
+            padding-right: 10px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <img src="https://static.thenounproject.com/png/683780-200.png" onclick="displayMenu()">
+    </nav>
+
+    <div class="menuPage" id="Menu">
+        <p>Menü</p>
+        <hr>
+        <p style="margin-left: 50px;">
+            <div>
+                <p onclick="displayList()" style="cursor: pointer;">GTA 6</p>
+                <ul id="List" style="background-color: white;">
+                    <li><a href="https://twitter.com/GTASNEWSLEAKS">Twitter feed</a></li>
+                    <li><a href="https://www.ign.com/games/grand-theft-auto-vi">ONE OF THE BEST SİTES ABOUT GAMES!!</a></li>
+                </ul>
+            </div>
+            <br>
+            -oyunlar
+            <br>
+            -haberler
+        </p>
+    </div>
+
+    <a href="https://gamerant.com/search/?q=gta+6">
+        <img id="GTA6" src="../Assets/gta6.jpg" alt="" width="500px" height="500px">
+    </a>
+
+    <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom?ref=hp">
+        <img id="ZELDA" src="../Assets/zelda.png" alt="" width="550px" height="500px">
+    </a>
+
+    <a href="https://store.steampowered.com/agecheck/app/1245620/?l=turkish">
+        <img id="eldenring" src="../Assets/elden ring.avif" alt="" width="300px" height="500px">
+    </a>
+
+    <script>
+        document.getElementById("Menu").style.marginLeft = "-700px"
+        document.getElementById("List").style.marginLeft = "-700px"
+        function displayMenu() {
+            const Element = document.getElementById("Menu")
+            
+            if(Element.style.marginLeft == "-700px") {
+                Element.style.marginLeft = "-10px"
+            } else {
+                Element.style.marginLeft = "-700px"
+            }
+        }
+
+        function displayList() {
+            const Element = document.getElementById("List");
+
+            if(Element.style.marginLeft == "-700px") {
+                Element.style.marginLeft = "0px"
+            } else {
+                Element.style.marginLeft = "-700px"
+            }
+        }
+    </script>
+  </body>
+
+
+</html>
